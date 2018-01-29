@@ -38,7 +38,7 @@ d3.json("countries_1995_2012.json", function(error, data){
 
         var columns = desired_cols;
 
-        var table = d3.select("body").append("table"),
+        var table = d3.select("#table-container").append("table"),
             thead = table.append("thead").attr("class", "thead");
         tbody = table.append("tbody");
 
