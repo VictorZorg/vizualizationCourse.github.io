@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<body>
+
+
+<link href="bar.css" type="text/css" rel="stylesheet">
+
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3-selection-multi.v0.4.min.js"></script>
+<script src="bar.js"> </script>
+
+
+
+<label>Time:</label>
+<input type="range" id="666" name="points" min="1995" max="2012" step="1" value="0" id="slider-time"  oninput="" onchange="" class="range" >
+
+<br>
+<label>Encode bars by:</label>
+<label><input checked="true" class="encoder" name="bars-encode" type="radio"  value="population" onclick="">Population</label>
+<label><input  class="encoder" name="bars-encode" type="radio"  value="gdp" onclick="">GDP</label>
+<label><input  class="encoder" name="bars-encode" type="radio"  value="life_expectancy" onclick="">Life expectancy</label>
+
+<br />
+
+<label>Filter by:</label>
+<input type="checkbox" class="myCheckbox" value="Americas"> Americas
+<input type="checkbox" class="myCheckbox" value="Africa"> Africa
+<input type="checkbox" class="myCheckbox" value="Asia"> Asia
+<input type="checkbox" class="myCheckbox" value="Europe"> Europe
+<input type="checkbox" class="myCheckbox" value="Oceania"> Oceania
+
+
+<br>
+
+<label>Aggregate by:</label>
+<label><input type="radio" name="details" value="None" class="aggregation" checked="true">None</label>
+<label><input type="radio" name="details" value="byCont" class="aggregation">by Continent</label>
+
+<br>
+
+<label>Sort by:</label>
+
+<label><input  class="sort_by_key" name="42" type="radio"  value="population" checked='true'  onclick="">Population</label>
+<label><input class="sort_by_key" name="42" type="radio"  value="name" onclick="">Name</label>
+<label><input  class="sort_by_key" name="42" type="radio" value="gdp" onclick="">GDP</label>
+<label><input  class="sort_by_key" name="42" type="radio"  value="life_expectancy" onclick="">Life expectancy</label>
+
+<br />
+
+</body>
+</html>
