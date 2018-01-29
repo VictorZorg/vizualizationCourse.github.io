@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="my_style.css">
+    <script src="hw1.js"></script>
+    <title>Homework VIS101</title>
+    <h1>Homework VIS101</h1>
+</head>
+<body>
+<div id="main_div">
+    <h2>Quote Of The Day:</h2>
+    <div id="sub_div" class="quote">default quote</div>
+</div>
+<br>
+<button id="change" type="button" onclick="change_quote()">
+    Change Quote Of The Day
+</button>
+<button id="add" type="button" onclick="add_quote()">
+    ADD
+</button>
+<button type="button" onclick="sort_quotes()">
+    SORT
+</button>
+<button type="button" onclick="reset()">
+    DELETE ALL
+</button>
+<select id="author_selector" onchange="select_author()">
+</select>
+</body>
+</html>
