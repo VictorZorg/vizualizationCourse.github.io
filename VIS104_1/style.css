@@ -1,0 +1,39 @@
+.node circle {
+  fill: white;
+  stroke: #000;
+  stroke-width: .9px;
+}
+
+.node:hover circle{
+  fill: black;
+}
+
+.node:hover,
+.node--colored {
+	font-weight: 700;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-flow: row;
+}
+
+.controls{
+    display: flex;
+    flex: 1;
+}
+
+.header {
+    margin: 50px;
+    margin-top: 30px;
+    color: #1946ba;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex: 1;
+    border-bottom: 2px solid #F5F5F5;
+}
+
+.dataviz svg {
+    border: 1px solid black;
+}
